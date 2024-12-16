@@ -25,9 +25,64 @@ Dispositivos de Entrada:
   - Sensor de Pressão e Temperatura: BMP280
   - Sensor de Distância Ultrassônico: HC-SR04
 
-Aqui está a explicação detalhada de cada parte do código, incluindo o **que cada função faz** e os conceitos envolvidos.
+## Funções declaradas
 
 ---
+
+### 1. **Funções de inicialização**
+Essas funções configuram os periféricos do microcontrolador:
+
+- **`void SystemClock_Config(void)`**  
+  Configura o sistema de clock, utilizando o oscilador HSI com PLL para definir a frequência do sistema.
+
+- **`static void MX_GPIO_Init(void)`**  
+  Inicializa os pinos GPIO.
+
+- **`static void MX_USART2_UART_Init(void)`**  
+  Configura a interface UART2 para comunicação serial.
+
+- **`static void MX_I2C1_Init(void)`**  
+  Inicializa o barramento I2C1 utilizado para comunicação com os sensores BMP280, MPU6050 e o display OLED SSD1306.
+
+- **`static void MX_TIM1_Init(void)`**  
+  Configura o temporizador TIM1 no modo PWM, usado para controlar o **servo motor**.
+
+- **`static void MX_TIM3_Init(void)`**  
+  Inicializa o TIM3 no modo PWM, usado para controlar dispositivos dependendo de valores de temperatura.
+
+- **`static void MX_TIM14_Init(void)`**  
+  Configura o TIM14 para medição de tempo, utilizado para **medir distâncias** com o sensor ultrassônico HCSR04.
+
+---
+
+### 2. **Funções do Usuário**
+Estas funções são adicionadas pelo programador:
+
+- **`void atualizarDisplayMPU6050(void)`**  
+  Lê os dados de inclinação do sensor MPU6050 (ângulos de Kalman nos eixos X e Y), exibe as informações no **display OLED** e envia os valores pela UART.
+
+- **`void atualizarDisplayBMP280(void)`**  
+  Lê os valores de temperatura, pressão e altitude do sensor BMP280. Exibe esses dados no display OLED e envia via UART. Além disso:  
+  - Se a **temperatura** for maior que **26,5°C**, um PWM no TIM3 é ativado, possivelmente para controle de algum dispositivo (como um cooler ou LED).
+
+- **`void HCSR04_Read(void)`**  
+  Realiza a medição de distância utilizando o sensor ultrassônico HCSR04. Calcula o tempo de resposta usando o TIM14 e converte para distância em centímetros.
+
+---
+
+### 3. **Função Principal: `main()`**
+O **loop principal** realiza as seguintes tarefas em repetição:
+1. **Inicialização**: Configura periféricos, inicializa sensores e o display OLED.
+2. **Leitura e Exibição do BMP280**:
+   - Atualiza o display com dados de pressão, temperatura e altitude.
+   - Ativa PWM no TIM3 caso a temperatura ultrapasse 26,5°C.
+3. **Leitura e Exibição do MPU6050**:
+   - Mostra no display OLED os ângulos de inclinação (Kalman).
+4. **Servo Motor**:
+   - Caso a variável `moveServo` esteja habilitada, move o servo motor gradualmente.
+5. **Sensor Ultrassônico**:
+   - Mede a distância utilizando o HCSR04.
+   - Transmite o valor da distância pela UART.
 
 ## **Definição de Estruturas**
 
