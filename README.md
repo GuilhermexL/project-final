@@ -14,7 +14,6 @@ Este projeto consiste na criação de uma estufa inteligente para controle e mon
 #### **Dispositivos de Saída**
 - **Display OLED I2C**: SSD1306
 - **Servo Motor**
-- **Relé**
 - **Buzzer**
 - **Porta USART** (Terminal Serial)
 - **LED Onboard** (NUCLEO-F446RE)
