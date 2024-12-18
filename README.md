@@ -41,8 +41,6 @@ Responsáveis pela configuração dos periféricos do microcontrolador:
 | `static void MX_TIM3_Init(void)`  | Configura o temporizador TIM3 para dispositivos dependentes da temperatura.  |
 | `static void MX_TIM14_Init(void)` | Configura o TIM14 para medições do sensor ultrassônico HC-SR04.              |
 | `void HCSR04_Read(void)`          | Realiza a medição de distância com o sensor ultrassônico HC-SR04.            |
-| `bmp280_read_float(&, &, &, & , &)` |  Realiza a medição de temperatura, pressão e altitude com o BMP280.        |
-| `MPU6050_Read_All(&hi2c1, &MPU6050);`| Realiza a medição do eixo X e Y com o sensor MPU6050.                     |
 
 ---
 
@@ -53,7 +51,7 @@ Implementações personalizadas para leitura e manipulação de dispositivos:
 |-----------------------------------|------------------------------------------------------------------------------|
 | `void atualizarDisplayMPU6050(void)` | Lê os dados do MPU6050, exibe no display OLED e transmite via UART.          |
 | `void atualizarDisplayBMP280(void)` | Lê temperatura, pressão e altitude do BMP280. Ativa PWM se temperatura > 26,5°C. |
-| `void openDrip(void)`          | Simula a abertura do sistema de gotejamento ao precionar o buttom 2            |
+| `void openDrip(void)`          | Simula a abertura do sistema de gotejamento ao pressionar o BUTTON2          |
 | `void capacity(void)`          | Realiza a medição de distância com o sensor ultrassônico HC-SR04.            |
 
 
