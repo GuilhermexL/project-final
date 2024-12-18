@@ -131,7 +131,7 @@ Parâmetros do filtro de Kalman:
 ### **Passos para Compilar e Executar**
 1. Clone o repositório:
    ```bash
-   git clone [<URL_do_repositorio>](https://github.com/GuilhermexL/project-final.git)
+   git clone https://github.com/GuilhermexL/project-final.git
    ```
 2. Importe o projeto no STM32CubeIDE.
 3. Compile o código e grave no microcontrolador.
