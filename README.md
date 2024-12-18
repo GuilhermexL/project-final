@@ -165,9 +165,12 @@ Se você encontrar problemas durante a atualização ou quiser contribuir com me
 
 ---
 
-## Sistema de Estufa Automatizada
+## Licença
+
+##### Sistema de Estufa Automatizada
 
 Este trabalho é software livre; você pode redistribuí-lo e/ou modificá-lo nos termos da Licença Pública Geral GNU publicada pela Free Software Foundation, na versão 3 da Licença, ou (a seu critério) qualquer versão posterior.
 
 Este trabalho é distribuído na esperança de que será útil, mas SEM QUALQUER GARANTIA; sem a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral GNU para obter mais detalhes.
 
+---
