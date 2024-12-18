@@ -128,10 +128,12 @@ Parâmetros do filtro de Kalman:
 ## **Como Executar o Projeto**
 
 ### **Pré-requisitos**
+
 1. Instale o **STM32CubeIDE**.
 2. Configure as bibliotecas necessárias (HAL e drivers I2C/UART).
 
 ### **Passos para Compilar e Executar**
+
 1. Clone o repositório:
    ```bash
    git clone https://github.com/GuilhermexL/project-final.git
@@ -149,3 +151,21 @@ Parâmetros do filtro de Kalman:
 - Vídeo de Funcionamento: https://youtu.be/vEHmp8Znd-A
 
 ---
+
+## Contribuições
+
+Se você encontrar problemas durante a atualização ou quiser contribuir com melhorias para este guia, sinta-se à vontade para abrir uma "issue" ou enviar um "pull request".
+
+## Autores
+
+- Aryelson Gonçalves(https://github.com/aryelson1)
+- Guilherme Santos(https://github.com/GuilhermexL)
+
+##### Sistema de Estufa Automatizada
+
+Este trabalho é software livre; você pode redistribuí-lo e/ou modificá-lo nos termos da Licença Pública Geral GNU publicada pela Free Software Foundation, na versão 3 da Licença, ou (a seu critério) qualquer versão posterior.
+
+Este trabalho é distribuído na esperança de que será útil, mas SEM QUALQUER GARANTIA; sem a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral GNU para obter mais detalhes.
+
+Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este trabalho; se não, escreva para a Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
