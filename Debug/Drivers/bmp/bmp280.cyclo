@@ -1,0 +1,14 @@
+../Drivers/bmp/bmp280.c:54:6:bmp280_init_default_params	1
+../Drivers/bmp/bmp280.c:64:13:read_register16	2
+../Drivers/bmp/bmp280.c:79:19:read_data	2
+../Drivers/bmp/bmp280.c:91:13:read_calibration_data	13
+../Drivers/bmp/bmp280.c:114:13:read_hum_calibration_data	7
+../Drivers/bmp/bmp280.c:133:12:write_register8	2
+../Drivers/bmp/bmp280.c:144:6:bmp280_init	17
+../Drivers/bmp/bmp280.c:209:6:bmp280_force_measurement	3
+../Drivers/bmp/bmp280.c:225:6:bmp280_is_measuring	3
+../Drivers/bmp/bmp280.c:240:23:compensate_temperature	1
+../Drivers/bmp/bmp280.c:259:24:compensate_pressure	2
+../Drivers/bmp/bmp280.c:294:24:compensate_humidity	1
+../Drivers/bmp/bmp280.c:313:6:bmp280_read_fixed	6
+../Drivers/bmp/bmp280.c:347:6:bmp280_read_float	2
