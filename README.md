@@ -141,6 +141,8 @@ Parâmetros do filtro de Kalman:
 
 ## **Imagens do Projeto**
 
-- Foto dos componentes
+![IMG_20241217_082957](https://github.com/user-attachments/assets/d1322794-862f-4f8c-b263-298109e1c066)
+
+- Vídeo de Funcionamento: https://youtu.be/vEHmp8Znd-A
 
 ---
