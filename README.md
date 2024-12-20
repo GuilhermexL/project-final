@@ -1,9 +1,8 @@
+![V-CC_Color_Basica_TextoAzul](https://github.com/user-attachments/assets/4f50d856-e04d-4080-858c-ee59c36bcbc0)
+
 # Projeto de Estufa Automatizada
 
 Este projeto consiste na criação de uma estufa inteligente para controle e monitoramento de temperatura, umidade e iluminação, utilizando o microcontrolador NUCLEO-F446RE e sensores específicos. Desenvolvido como projeto final da capacitação em Sistemas Embarcados do <em> Virtus CC </em>, o projeto integra conceitos de hardware, software e documentação.
-
-![V-CC_Color_Basica_TextoAzul](https://github.com/user-attachments/assets/4f50d856-e04d-4080-858c-ee59c36bcbc0)
-
 
 ---
 
